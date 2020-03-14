@@ -1,6 +1,6 @@
 var express = require("express");
 var mongoose = require("mongoose");
-var port = 3000;
+var port = process.env.PORT || 3000;
 
 var app = express();
 app.use(express.urlencoded({ extended: true }));
